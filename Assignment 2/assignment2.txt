@@ -1,0 +1,20 @@
+1. Inline style CSS override rules defined in style elements and external
+stylesheets (sidenote: if the !important is used, that will overrule).
+But inline style CSS override the rest because it is made that way. It is
+though a natural explanation. It is easier to edit in the inline style CSS if
+a problem appears and a small change need to take place, it is much easier
+to do it that way.
+
+2. ID vil overrule classes, so if we want to have a class but make it not count
+ for one part, or make that part different, we can use ID. Classes makes it
+ easier to change than to use a lot of id's.
+
+ 3. RGBA is the same as the RGB, but gives the possibility to choose how strong
+ you want the RGB to be. RGB means red, green, blue and will, based on how high
+numbers it is given, make different colors. The scale goes from 0-255.
+The alpha (A) can be called the opacity of the color.
+
+4. Because if you put css in the body element it can not be valid in strict
+browsers like Firefox.
+
+5. p[attribute="article"]

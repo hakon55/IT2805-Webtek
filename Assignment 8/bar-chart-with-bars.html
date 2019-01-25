@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>With bars</title>
+    <script src="taxForms.js"></script>
+    <style>
+      canvas {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="chart" width="700" height="550"></canvas>
+    <script type="text/javascript">
+    const canvas = document.getElementById('chart');
+    const context = canvas.getContext('2d');
+
+    function drawLine(fromX, fromY, toX, toY) {
+      context.beginPath();
+      context.moveTo(toX, toY);
+      context.lineTo(fromX, fromY);
+      context.stroke();
+    }
+
+    /* Draw a text (string) on (x, y) */
+    function drawText(text, x, y) {
+      context.fillStyle = 'black';
+      context.fillText(text, x, y);
+    }
+
+    /* Draw a text and with a line to its right */
+    function drawLineWithText(text, fromX, fromY, toX, toY) {
+      drawText(text, fromX - 50, fromY + 5);
+      drawLine(fromX, fromY, toX, toY);
+    }
+
+    /* Insert your code here. */
+      for (var i=0; i<10; i++){
+        drawLineWithText((1+i)*100000, 65, 500-50*i, 550, 500-50*i)
+    }
+
+    function labels(c, x, y, w, h) {
+      context.fillStyle=c;
+      context.fillRect(x,y,w,h)
+    }
+    labels('red', '560', '50', '50', '25')
+    labels('blue', '560', '100', '50', '25')
+    drawText('Income', 620, 67)
+    drawText('Wealth', 620, 117)
+
+      for (var i=0; i<taxForms.length; i++) {
+        labels('red', 0+(i+1)*140, 550, 35, -50*(taxForms[i].income/100000))
+        labels('blue', 50+(i+1)*140, 550, 35, -50*(taxForms[i].wealth/100000))
+}
+
+/*    function drawBar(amount, color, x) {
+      let width = 100;
+      let height = -50 * (amount/100000);
+      context.fillStyle = color;
+      context.fillRect(x, 550, width, height);
+    }
+
+    drawBar(750000, 'red', 100);
+    drawBar(300000, 'blue', 250); */
+    </script>
+  </body>
+</html>

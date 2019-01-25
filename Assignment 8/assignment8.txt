@@ -1,0 +1,29 @@
+1. When calling getContext('2d') on a Canvas element, it will return a drawing context (i.e. the type of canvas) - in this case a two-dimensional context. How can we get a three-dimensional context instead?
+You can use getContext('webgl'), which will create a three-dimensional context. This is only avaiable on browsers that implements WebGL version 1. For browsers that implements webGL version 2 you can use ('webgl2') to get a three-dimensional context.
+2. How would you create a blue circle using the Canvas element? Explain with words or code.
+From canvas in HTML with id='canvas'
+
+const canvas = document.getElementById('canvas');
+const context = canvas.getContext('2d');
+
+/* to create a circle we use arc(x, y, r, sA, eA, aC)
+x and y is the center points, and r is the radius. sA and eA is used to tell the starting angle and ending angle. aC is true if the arc is anti-clockwise. */
+
+context.fillStyle = 'blue';
+context.beginPath();
+context.arc(100,100,30,0,Math.PI*2, true);
+context.fill();
+
+/* If this questions did not mean to fill the circle, but just have a blue stroke in a circleform, we dont use context.fill(); but we use context.stroke();, and context.*/
+
+3. What is a more terse (also known as shorter) way of writing the loop in the following using the Array.filter method?
+
+const countries = ['Norway', 'Sweden',  'Denmark', 'New Zealand'];
+const countriesStartingWithN = [];
+
+function checkN(country) {
+	return startWith('N');
+	}
+
+contriesStartingWithN = countries.filter(checkN);
+console.log(contriesStartingWithN);

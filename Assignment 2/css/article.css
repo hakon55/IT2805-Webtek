@@ -1,0 +1,45 @@
+article {
+    width: 960px;
+    margin: auto;
+  }
+body {
+  background-color: #f3f3f3;
+}
+* {
+  font: "Georgia", "Verdana";
+  color: #525252;
+  font-size: 18px 22px;
+  line-height: 150%;
+
+}
+h1 {
+    font-size: 3em;
+}
+img {
+  width: 960px;
+}
+h2 {
+    font-size: 1.8em;
+}
+p, blockquote, ul, ol {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+#byline {
+  border-bottom: 1px solid black;
+}
+#facts {
+    margin: 1em 0em 1em 1em;
+    width: 50%;
+    border: 1px dashed;
+    float: right;
+}
+
+#facts > ul {
+    list-style-image: url('cup-icon.svg');
+    line-height: 1.5em;
+    padding-left: 1.5em;
+}
+section {
+  max-width: 620px;
+}

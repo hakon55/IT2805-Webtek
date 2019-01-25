@@ -1,0 +1,29 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+h1, p, .footer {
+  text-align: center;
+}
+
+.wrapper {
+  height: auto !important;
+  height: 100;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* Part 4 */
+
+.list {
+  list-style-type: square;
+  height: 645px;
+}
+li:last-child {
+  color: red;
+}

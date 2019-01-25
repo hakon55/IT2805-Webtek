@@ -1,0 +1,32 @@
+td {
+  border: 1px solid black;
+}
+select {
+  width:100%;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+#submit {
+  position: relative;
+  left:80px;
+  border: none;
+}
+#submit2 {
+  position: relative;
+  left:10px;
+  font-size: 16px;
+}
+
+table {
+  position: relative;
+  left: 20px;
+  top: 20px;
+}
+table, td, tr, input {
+  background-color: #f1f1f1;
+}
+* {
+  background-color: #c2c2c2;
+}

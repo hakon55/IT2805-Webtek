@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tax form</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <form action="http://folk.ntnu.no/michaedm/norwegian-tax-administration/receive.php" method="post" id='kalkuler'>
+          <table>
+            <tr>
+              <td>Name:</td>
+              <td><input type:"text" name="Name" placeholder="Name" required onkeyup="validateField(name)" id="name"></td>
+            </tr>
+            <tr>
+              <td>Gender: </td>
+              <td><select name="Gender: " required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select></td>
+            </tr>
+            <tr>
+              <td>E-mail: </td>
+              <td><input type="mail" name="E-mail" value="" placeholder="E-mail" required></td>
+            </tr>
+            <tr>
+              <td>Birthdate: </td>
+              <td><input type="date" name="Birthdate" max="1988-12-31" required></td>
+            </tr>
+            <tr>
+              <td>Hero name: </td>
+              <td><input type="text" name="Hero" placeholder="Hero name" required></td>
+            </tr>
+              <tr>
+                <td>Do you were spandex?</td>
+                <td><select class="" name="Spandex?" required>
+                  <option value="True">True</option>
+                  <option value="False">False</option>
+                </select></td>
+              </tr>
+              <td>Strength: </td>
+              <td><input type="number" name="Strength" min="1" value="5" max="10" required></td>
+            </tr>
+            <tr>
+              <td>Speed: </td>
+              <td><input type="number" name="Speed" min="1" value="5" max="10" required></td>
+            </tr>
+            <tr>
+              <td>Intelligence: </td>
+              <td><input type="number" name="Intelligence" min="1" value="5" max="10" required></td>
+            </tr>
+            <tr>
+              <td>Income: </td>
+              <td><input type="number" name="Income" value="" min="0" required id='income'></td>
+            </tr>
+            <tr>
+              <td>Wealth: </td>
+              <td><input type="number" name="Wealth" value="" required id='wealth'></td>
+            </tr>
+            <tr>
+              <td>Tax: </td>
+              <td id="tax"><input type="number" name="Tax" readonly value="0"></td>
+            </tr>
+            <tr>
+              <td id="submit"><input type="submit" name="" value="Submit tax form" id="submit2"></td>
+            </tr>
+          </table>
+
+        </form>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

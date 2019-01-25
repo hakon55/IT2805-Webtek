@@ -1,0 +1,17 @@
+Questions
+
+1. Why do mobile phones usually ignore auto play on video elements?
+- It is because they are designed that way. Developers disabled
+autoplay in order to protect the user's bandwidth.
+2. What will the CSS snippet at the end of this section do if the visitor is
+browsing on a device with 320 x 568 resolution?
+- The only screen means it will apply css style to a device only with
+a screen. When it a used a device with 320 x 568 resolution and the @media
+is sat to have a min-device-width of 768px, that means the media-file will
+not be displayed.
+3. Mention some of the advantages of having a single responsive website
+instead of dedicated versions like m.til.no for mobile and til.no for desktop?
+- Responsive web design makes your web page look good on all devices.
+By having a single responsive website it will be more easy for the designer
+to know where everything is, and in that way it will be easier to change
+later than to have to change in the more dedicated versions aswell.

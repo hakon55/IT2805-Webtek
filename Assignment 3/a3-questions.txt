@@ -1,0 +1,6 @@
+Questions:
+1) The difference between position: absolute and position: fixed is that
+absolute will be positioned relative to the nearest positioned ancestor. The
+fixed is positioned relative to the viewport, so whenever fixed is used it
+will always stay the same page even when the page is scrolled.
+2) We can use the pseudo-selector called the nth-child. 
